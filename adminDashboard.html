@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="adminDashboard.css">
+</head>
+<body>
+    <h1>Welcome, Admin</h1>
+    
+    <!-- Buttons -->
+    <button id="register-candidate-button">Register Candidate</button>
+    <button id="view-results-button">View Results</button>
+    <button id="logout-button">Logout</button>
+
+    <!-- Pop-up for View Results -->
+    <div id="view-results-popup" class="popup" style="display:none;">
+        <h2>Select an Option</h2>
+        <button id="total-votes-button">Total Votes</button>
+        <button id="votes-by-party-and-pincode-button">Votes by Party and Pincode</button>
+        <button id="votes-by-pincode-button">Votes by Pincode</button>
+        <button id="close-popup-button">Close</button>
+    </div>
+
+    <!-- Pop-up for Party ID and Pincode -->
+    <div id="party-pincode-popup" class="popup" style="display:none;">
+        <label for="partyId">Party ID:</label>
+        <input type="number" id="partyId" placeholder="Enter Party ID">
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" placeholder="Enter Pincode">
+        <button id="submit-party-pincode-button">Submit</button>
+        <button id="close-party-pincode-popup">Close</button>
+    </div>
+
+    <!-- Pop-up for Pincode Only -->
+    <div id="pincode-popup" class="popup" style="display:none;">
+        <label for="pincode-only">Pincode:</label>
+        <input type="text" id="pincode-only" placeholder="Enter Pincode">
+        <button id="submit-pincode-button">Submit</button>
+        <button id="close-pincode-popup">Close</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script type="module" src="adminDashboard.js"></script>
+</body>
+</html>

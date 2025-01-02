@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+    <div class="background">
+        <div class="overlay">
+            <div class="signin-page">
+                <h2>Create an Account</h2>
+                <form id="signin-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="aadhar">Aadhar Number:</label>
+                    <input type="text" id="aadhar" name="aadhar" maxlength="12" required>
+
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+
+                    <label for="pincode">Pincode:</label>
+                    <input type="text" id="pincode" name="pincode" maxlength="6" required>
+
+                    <label for="voterId">VoterId:</label>
+                    <input type="text" id="voterId" name="voterId" required>
+
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script type="module" src="signin.js"></script>
+</body>
+</html>
